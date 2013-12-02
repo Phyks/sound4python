@@ -27,7 +27,7 @@ def sound(itr,samprate=16000,autoscale=True,output=False):
     #for now, assume 1-D iterable
     mult = 1
     if( autoscale ):
-        mult = 32768.0 / max(itr)
+        mult = 32767.0 / max(itr)
         #mult = 128.0 / max(itr)
 
     #create file in memory
